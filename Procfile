@@ -1,0 +1,1 @@
+web: gunicorn lyte_tech_challenge.wsgi

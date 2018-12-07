@@ -1,9 +1,9 @@
 from rest_framework import routers
-from eventbrite.views import DummyViewSet
+from eventbrite.views import EventViewSet
 
 app_name = 'eventbrite'
 
 router = routers.DefaultRouter()
-router.register('dummy', DummyViewSet, basename='dummy-basename')
+router.register('events', EventViewSet)
 
 urlpatterns = router.urls
